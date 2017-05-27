@@ -1,0 +1,133 @@
+/*
+ ===================
+  Variables
+ ===================
+ *
+ * - General
+ * - Header
+ * - Navigation
+ * - Footer
+*/
+
+/*
+ ===================
+  General
+ ===================
+*/
+
+// Fonts
+$font-family-base: 'Open Sans', sans-serif;
+$headings-font-family: 'Open Sans', sans-serif;
+$headings-font-weight: 300;
+
+$font-size-base: 15px;
+$line-height-base: 1.55;
+
+// Colors
+$color-grey: #3b3a3a;
+$color-grey-light: #c8c9cb;
+$color-grey-lighter: #e3e3e3;
+
+$color-white: #ffffff;
+
+$text-color: $color-grey;
+
+$body-bg: #f0f0f0;
+
+$color-success: #6fc991;
+$color-error: #e95050;
+
+// Sizes and spaces
+$font-size-h1: 27px;
+$font-size-h2: 27px;
+$font-size-h3: 18px;
+$font-size-h4: 23px;
+
+$screen-sm-min: 370px;
+$screen-md-min: 765px;
+$screen-lg-min: 1200px;
+
+$screen-xs-max: 1920px;
+$screen-xs: 375px;
+
+$space-xs: 10px;
+$space-xs-left: $space-xs;
+$space-xs-right: $space-xs;
+$space-sm: 60px;
+$space-sm-left: $space-sm;
+$space-sm-right: $space-sm;
+$space-md: 90px;
+$space-md-left: $space-md;
+$space-md-right: $space-md;
+$space-lg: 120px;
+$space-lg-left: $space-lg;
+$space-lg-right: 260px;
+
+/*
+ ===================
+  Header
+ ===================
+*/
+
+// Sizes 
+$header-font-size: 16px;
+
+$slider-height-xs: 225px;
+$slider-height-sm: 325px;
+$slider-height-md: 425px;
+$slider-height-lg: 500px;
+
+/*
+ ===================
+  Navigation
+ ===================
+*/
+
+// Colors
+$text-color-nav: #251e1a;
+$nav-border-color: rgba(123, 123, 123, 0.3);
+
+$nav-bg-color: #ffffff;
+$nav-bg-color-mobile: #404d55;
+$nav-logo-bg-color-mobile: #545f65;
+
+$subnav-bg-color: rgba(64, 77, 84, 0.9);
+// Sizes 
+$menu-width: 1000px;
+
+
+/*
+ ===================
+  Content
+ ===================
+*/
+
+/*
+ ===================
+  Teaser
+ ===================
+*/
+
+$teaser-height-xs: auto;
+$teaser-height-sm: 450px;
+$teaser-height-md: 450px;
+//$teaser-height-lg: 520px;
+$teaser-height-lg: 400px;
+
+$teaser-height-sidebar: 450px;
+
+$teaser-padding-xs: 35px;
+$teaser-padding-sm: 35px;
+$teaser-padding-md: 35px;
+$teaser-padding-lg: 35px;
+
+$teaser-link-icon-height: 32px;
+
+/*
+ ===================
+  Footer
+ ===================
+*/
+$footer-bg: #404d54;
+$footer-font-size: 16px;
+$footer-height: 60px;

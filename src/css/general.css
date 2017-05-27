@@ -1,0 +1,260 @@
+/*
+ ===================
+  General Styles
+ ===================
+ *
+ *
+*/
+/*
+ ===================
+  Variables
+ ===================
+ *
+ * - General
+ * - Header
+ * - Navigation
+ * - Footer
+*/
+/*
+ ===================
+  General
+ ===================
+*/
+/*
+ ===================
+  Header
+ ===================
+*/
+/*
+ ===================
+  Navigation
+ ===================
+*/
+/*
+ ===================
+  Content
+ ===================
+*/
+/*
+ ===================
+  Teaser
+ ===================
+*/
+/*
+ ===================
+  Footer
+ ===================
+*/
+html,
+body {
+  height: 100%; }
+
+.aligncenter {
+  width: 100%; }
+
+body {
+  background-color: #f0f0f0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #3b3a3a; }
+
+/*
+ =================
+  Basic structure
+ =================
+*/
+.content {
+  width: 100%; }
+
+/*
+ =================
+  Links
+ =================
+*/
+a,
+a:visited {
+  display: inline-block;
+  color: #3b3a3a; }
+  a:hover, a:active, a:focus,
+  a:visited:hover,
+  a:visited:active,
+  a:visited:focus {
+    color: currentColor; }
+
+a[href*="mailto"] {
+  color: orange; }
+
+/*
+ =================
+  Media
+ =================
+*/
+iframe,
+object,
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*
+ =================
+  Headings
+ =================
+*/
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 11px; }
+
+h3 {
+  line-height: 1.3; }
+
+/*
+ =================
+  Text
+ =================
+*/
+p {
+  margin-bottom: 21px; }
+
+blockquote {
+  border-left: 0;
+  font-size: 27px;
+  text-transform: uppercase; }
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus,
+a:focus:active {
+  text-decoration: none; }
+
+.color-blue {
+  color: blue !important; }
+
+.color-purple {
+  color: purple !important; }
+
+.color-green {
+  color: green !important; }
+
+.color-brown {
+  color: brown !important; }
+
+.color-white-eggshell {
+  color: white !important; }
+
+.color-white-pink {
+  color: pink !important; }
+
+/*
+ ======================
+  Forms
+ ======================
+*/
+button,
+.btn {
+  background-color: orange;
+  border-radius: 3px;
+  color: white;
+  text-transform: uppercase; }
+  button:hover,
+  .btn:hover {
+    background-color: orange;
+    color: white; }
+  button a,
+  .btn a {
+    color: currentColor;
+    text-decoration: none; }
+
+/*
+ ======================
+  Pages
+ ======================
+*/
+article.page,
+article.post {
+  margin: 0 10px 0 10px; }
+  @media (min-width: 370px) {
+    article.page,
+    article.post {
+      margin: 0 60px 0 60px; } }
+  @media (min-width: 765px) {
+    article.page,
+    article.post {
+      margin: 0 90px 0 90px; } }
+  @media (min-width: 1200px) {
+    article.page,
+    article.post {
+      margin: 0 90px 0 60px; } }
+
+article.post.teaser,
+article.page.teaser {
+  margin: 0; }
+
+/*
+ ===========
+  WordPress
+ ===========
+*/
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }

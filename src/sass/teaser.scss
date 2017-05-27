@@ -1,0 +1,243 @@
+/*
+ ======================
+  Teaser
+ ======================
+*/
+@import "variables";
+
+.sidebar .teaser {
+  @media (min-width: $screen-lg-min) {
+    height: $teaser-height-sidebar;
+  }
+}
+
+.teaser {
+  min-height: 400px;
+  height: auto;
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  @media (min-width: $screen-sm-min) {
+    height: $teaser-height-sm;
+  }
+
+  @media (min-width: $screen-md-min) {
+    height: $teaser-height-md;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    height: $teaser-height-lg;
+  }
+  @media (min-width: 1600px){
+    height: 440px;
+  }
+  @media (min-width: 1800px){
+    height: 500px;
+  }
+  @media(min-width: 992px) and (max-width:1450px){
+    h2{
+    font-size:  2.3vw;
+    }
+  }
+    // Background
+  .teaser-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-width: none;
+      min-height: 100%;
+      width: auto;
+      height: 430px;
+
+      @media (min-width: $screen-sm-min) {
+        height: $teaser-height-sm;
+      }
+
+      @media (min-width: $screen-md-min) {
+        height: $teaser-height-md;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        height: $teaser-height-lg;
+      }
+    }
+  }
+  
+  .teaser-inner {
+    padding: $teaser-padding-xs;
+
+    @media (max-width: $screen-xs-max) {
+      padding: 40px;
+      padding-bottom: $teaser-padding-xs + $teaser-link-icon-height + 10px;
+
+    }
+    @media (max-width: $screen-xs){
+      padding: 25px;
+      padding-bottom: 35px;
+    }
+    @media (min-width: $screen-sm-min) {
+      padding: $teaser-padding-sm;
+    }
+    
+    @media (min-width: $screen-md-min) {
+      padding: $teaser-padding-md;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      padding: $teaser-padding-lg;
+    }
+  }
+
+  h1, h2, h3 {
+   // word-wrap: break-word;
+    word-wrap: normal;
+  }
+  
+  // Topic
+  .teaser-topic {
+    font-size: $font-size-base;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+    
+    a {
+      color: currentColor;
+    }
+  }
+  
+  .teaser-content {
+    color: $text-color;
+  }
+  
+  // Link
+  .teaser-link {
+    position: absolute;
+    text-transform: uppercase;
+    color: $text-color;
+    height: $teaser-link-icon-height;
+    line-height: $teaser-link-icon-height;
+    bottom: $teaser-padding-xs;
+
+    @media (min-width: $screen-sm-min) {
+      //bottom: $teaser-padding-sm;
+      bottom: 20px;
+    }
+    @media (max-width: $screen-xs){
+      bottom: 15px;
+    }
+    @media (min-width: $screen-md-min) {
+      bottom: $teaser-padding-md;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      bottom: $teaser-padding-lg;
+    }
+    
+    .teaser-link-icon {
+      display: block;
+      float: left;
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      background-size: 32px 32px; 
+    }
+  }
+  
+  .teaser-link-full {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*
+ ======================
+  Themes
+ ======================
+*/
+
+// Blue
+.teaser.teaser-theme-blue {
+  //background-color: $color-blue;
+  background-color: #00A4C9;
+  .teaser-topic {
+    color: $color-white;
+  }
+}
+
+// Green
+.teaser.teaser-theme-green {
+  background-color: darkolivegreen;
+
+  .teaser-topic {
+    color: purple;
+  }
+}
+
+.teaser.teaser-cites.teaser-theme-green {
+  .teaser-topic {
+    color: blue;
+  }
+}
+
+// Purple
+.teaser.teaser-theme-purple {
+  background-color: purple;
+
+  .teaser-topic {
+    color: white;
+  }
+
+  .teaser-content {
+    color: white;
+  }
+}
+
+// Brown
+.teaser.teaser-theme-brown {
+  background-color: brown;
+
+  .teaser-topic {
+    color: white;
+  }
+}
+
+// White seashell
+.teaser.teaser-theme-white-seashell {
+  background-color: seashell;
+
+  .teaser-topic {
+    color: blue;
+  }
+}
+
+// White pink
+.teaser.teaser-theme-white-pink {
+  background-color: pink;
+
+  .teaser-topic {
+    color: white;
+  }
+}
+
+// Fits multiple themes
+.teaser.teaser-theme-brown,
+.teaser.teaser-theme-white-eggshell,
+.teaser.teaser-theme-white-pink {
+  .teaser-link {
+    .teaser-link-icon {
+      background-size: 32px 32px;
+    }
+  }
+}
