@@ -1,3 +1,9 @@
+[aria-hidden="true"] {
+  display: none; }
+
+[role="button"] {
+  cursor: pointer; }
+
 @-ms-viewport {
   width: device-width;
 }
@@ -10477,7 +10483,8 @@ footer {
   footer ul {
     list-style-type: none;
     padding-left: 0;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 0; }
     footer ul li {
       display: block;
       padding: 0; }

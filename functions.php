@@ -243,34 +243,18 @@ function display_teaser() {
 /**
  * Accordion shortcode
  */
-function jgs_accordion_shortcode() {
-    ob_start();
-
-    if( have_rows('accordion_sections') ): $section = 1; ?>
-        <div class="panel-group panel-group-accordion" id="accordion" role="tablist" aria-multiselectable="true">
-            <?php while ( have_rows('accordion_sections') ) : the_row(); ?>
-                <div class="panel">
-                    <div class="panel-heading" role="tab" id="heading<?php echo $section; ?>">
-                        <div class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" class="collapsed"
-                               href="#collapse<?php echo $section; ?>" aria-expanded="true" aria-controls="collapseOne">
-                                <?php the_sub_field('accordion_section_titel'); ?>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="collapse<?php echo $section; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php echo $section; ?>">
-                        <div class="panel-body">
-                            <?php the_sub_field('accordion_section_content'); ?>
-                        </div>
-                    </div>
-                </div>
-                <?php $section++;
-
-            endwhile; ?>
-        </div>
-    <?php endif; ?>
-
-    <?php return ob_get_clean();
+function jgs_accordion($atts, $content = NULL) {
+    extract(shortcode_atts( array( 'title' => ''), $atts ));
+    $uniqueId = uniqid("jgs-accordion-");
+    $output = "<div class=\"jgs-accordion\">";
+    $output .= "<h3 class=\"jgs-accordion__title\">";
+    $output .= "<a tabIndex=\"0\" class=\"jgs-accordion__toggle\" role=\"button\" aria-expanded=\"false\" aria-controls=\"$uniqueId\">$title</a>";
+    $output .= "</h3>";
+    $output .= "<div id=\"$uniqueId\" aria-hidden=\"true\" class=\"jgs-accordion__body\">";
+    $output .= do_shortcode( $content );
+    $output .= "<a tabIndex=\"0\" class=\"jgs-accordion__toggle\" role=\"button\" aria-expanded=\"false\" aria-controls=\"$uniqueId\">Read Less</a>";
+    $output .= "</div>";
+    $output .= "</div>";
+    return $output;
 }
-
-add_shortcode( 'akkordeon', 'jgs_accordion_shortcode' );
+add_shortcode("akkordion", "jgs_accordion");
