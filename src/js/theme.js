@@ -22,15 +22,6 @@
             }, 'xml');
         });
 
-        // Change Arrow Color
-        //$('img[src$=".svg"]').each(function() {
-        //	$('cls-1').css('stroke',$('cls-1').closest('article[class*="teaser-theme-"]').css("background-color"));
-        //});
-
-        // Offcanvas
-        $('[data-toggle="offcanvas"], .overlay').click(function () {
-            $('.row-offcanvas').toggleClass('active');
-        });
 
         // Slider
         $('.header-slider').slick({
@@ -41,21 +32,5 @@
             fade: true
         });
 
-        // Cites
-        $('.cites-slider').slick({
-            autoplay: true,
-            infinite: true,
-            dots: false
-        });
-
-
-        // Affix
-        /*$('#main-menu-desktop').affix({
-         offset: {
-         top: function () {
-         return $('.header-slider').outerHeight(true);
-         }
-         }
-         });*/
     });
 })(jQuery);
