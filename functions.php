@@ -41,12 +41,9 @@ include 'inc/custom-post-types.php';
  */
 function jgs_enqueue_scripts() {
 
-
-
 	// Main
     wp_enqueue_script( 'main', get_template_directory_uri() . '/dist/js/main.min.js' );
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/dist/css/main.min.css' );
-
 
 }
 

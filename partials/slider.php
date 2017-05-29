@@ -21,7 +21,7 @@ $slider = get_slider();
                     <div class="header-slide item<?php echo (get_sub_field('slide_bg_position')) ? ' ' . get_sub_field('slide_bg_position') : ''; ?>" style="<?php echo $background_attr ?>">
                         <?php if( get_sub_field('slide_content') === 'title-text' ) : ?>
                             <div class="slide-logo">
-                                <img src="<?php echo get_template_directory_uri(); ?>" alt="<?php the_sub_field('slide_content_title'); ?>" width="160" height="36" class="slide-img-logo" />
+                                <img src="<?php echo get_template_directory_uri('dist/img'); ?>" alt="<?php the_sub_field('slide_content_title'); ?>" width="160" height="36" class="slide-img-logo" />
                             </div>
                             <div class="slide-content">
                                 <?php $color_class = '';

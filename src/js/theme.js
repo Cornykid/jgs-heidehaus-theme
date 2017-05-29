@@ -38,9 +38,7 @@
             autoplaySpeed: 6000,
             infinite: true,
             dots: true,
-            fade: true,
-            prevArrow: false,
-            nextArrow: false,
+            fade: true
         });
 
         // Cites
