@@ -10896,11 +10896,11 @@ a img.aligncenter {
     outline: 0; }
 
 .slick-prev {
-  background: transparent url("./dist/img/slider_arrow_left.png") no-repeat center left;
+  background: transparent url("../../dist/img/slider_arrow_left.png") no-repeat center left;
   left: 0; }
 
 .slick-next {
-  background: transparent url("./dist/img/slider_arrow_right.png") no-repeat center right;
+  background: transparent url("../../dist/img/slider_arrow_right.png") no-repeat center right;
   right: 0; }
 
 .slick-dots {
@@ -10924,7 +10924,11 @@ a img.aligncenter {
     border: 0;
     padding: 0;
     background: transparent; }
-  @media (min-width: 370px) {
+
+.logo-container {
+  background-color: grey; }
+
+@media (min-width: 370px) {
   .header-slider {
     height: 325px; }
   .header-slide {
@@ -10936,7 +10940,8 @@ a img.aligncenter {
   .slick-prev,
   .slick-next {
     display: inline-block !important; } }
-  @media (min-width: 765px) {
+
+@media (min-width: 765px) {
   .header-slider {
     height: 425px; }
   .header-slide {
@@ -10944,7 +10949,8 @@ a img.aligncenter {
     .header-slide .header-slide-content {
       left: 10%;
       width: 350px; } }
-  @media (min-width: 1200px) {
+
+@media (min-width: 1200px) {
   .header-slider {
     height: 500px; }
   .header-slide {

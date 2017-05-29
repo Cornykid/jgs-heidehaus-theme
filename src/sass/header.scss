@@ -158,12 +158,12 @@
 }
 
 .slick-prev {
-  background: transparent url('./dist/img/slider_arrow_left.png') no-repeat center left;
+  background: transparent url('../../dist/img/slider_arrow_left.png') no-repeat center left;
   left: 0;
 }
 
 .slick-next {
-  background: transparent url('./dist/img/slider_arrow_right.png') no-repeat center right;
+  background: transparent url('../../dist/img/slider_arrow_right.png') no-repeat center right;
   right: 0;
 }
 
@@ -203,4 +203,8 @@
     padding:0;
     background: transparent;
   }
+}
+
+.logo-container {
+  background-color: grey;
 }

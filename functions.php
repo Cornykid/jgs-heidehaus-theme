@@ -242,3 +242,38 @@ function display_teaser() {
 		wp_reset_postdata();
 	endif;
 }
+
+/**
+ * Accordion shortcode
+ */
+function jgs_accordion_shortcode() {
+    ob_start();
+
+    if( have_rows('accordion_sections') ): $section = 1; ?>
+        <div class="panel-group panel-group-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+            <?php while ( have_rows('accordion_sections') ) : the_row(); ?>
+                <div class="panel">
+                    <div class="panel-heading" role="tab" id="heading<?php echo $section; ?>">
+                        <div class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" class="collapsed"
+                               href="#collapse<?php echo $section; ?>" aria-expanded="true" aria-controls="collapseOne">
+                                <?php the_sub_field('accordion_section_titel'); ?>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="collapse<?php echo $section; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php echo $section; ?>">
+                        <div class="panel-body">
+                            <?php the_sub_field('accordion_section_content'); ?>
+                        </div>
+                    </div>
+                </div>
+                <?php $section++;
+
+            endwhile; ?>
+        </div>
+    <?php endif; ?>
+
+    <?php return ob_get_clean();
+}
+
+add_shortcode( 'akkordeon', 'jgs_accordion_shortcode' );
