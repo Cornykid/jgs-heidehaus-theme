@@ -9,9 +9,7 @@
     <div class="logo-wrapper">
         <div class="logo-link">
             <a href="<?php echo home_url(); ?>">
-
-                    <img border="0"  src="image-header" width="100" height="100">
-
+                    <img alt="logo" src="<?php echo get_theme_file_uri('dist/img/image-header.jpg')?>" >
             </a>
         </div>
     </div>
