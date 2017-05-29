@@ -41,11 +41,11 @@ include 'inc/custom-post-types.php';
  */
 function jgs_enqueue_scripts() {
 
-	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
 
 	// Main
-    wp_enqueue_script( 'main', get_template_directory_uri() . '/dist/js/main.min' . $suffix . '.js' );
-	wp_enqueue_style( 'main', get_template_directory_uri() . '/dist/css/main.min' . $suffix . '.css' );
+    wp_enqueue_script( 'main', get_template_directory_uri() . '/dist/js/main.min.js' );
+	wp_enqueue_style( 'main', get_template_directory_uri() . '/dist/css/main.min.css' );
 
 
 }
