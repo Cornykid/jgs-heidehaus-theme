@@ -10968,6 +10968,56 @@ a img.aligncenter {
       left: 25%;
       width: 460px; } }
 
+/*
+Navigation Sample: CSS
+This is the straight CSS example of navigation code.
+*/
+/* Some Basic Styling */
+/* The important stuff */
+.nav {
+  background-color: #cbcbcb; }
+
+.nav,
+.nav ul,
+.nav li {
+  padding: 0;
+  margin: 0; }
+
+.nav li {
+  position: relative;
+  list-style: none; }
+
+.nav li:hover ul {
+  left: auto; }
+
+.nav a {
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+  color: #414141; }
+
+.nav > li {
+  display: inline-block; }
+
+.nav > li:hover, .nav > li > a:hover {
+  background-color: white; }
+
+.nav ul {
+  position: absolute;
+  top: 100%;
+  left: -99999px;
+  width: 10em;
+  background-color: #b1b1b1; }
+
+.nav ul li {
+  border-top: 1px solid #efefef; }
+
+.nav ul li:first-child {
+  border-top: none; }
+
+.nav ul a:hover {
+  background-color: #919191; }
+
 /* Slider */
 .slick-slider
 {
