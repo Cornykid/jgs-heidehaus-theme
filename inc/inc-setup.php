@@ -40,6 +40,7 @@ if ( ! function_exists( 'jgs_setup' ) ) :
 			'main'    => __( 'Main Menu', 'jgs' ),
 			'sidebar' => __( 'Sidebar Menu', 'jgs' ),
 			'footer'  => __( 'Footer Menu', 'jgs' ),
+            'footer-legal'  => __( 'Footer Menu-legal', 'jgs' ),
 			'social'  => __( 'Social Links Menu', 'jgs' ),
 		] );
 

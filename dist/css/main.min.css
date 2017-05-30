@@ -10468,16 +10468,23 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 */
 footer {
   background-color: #404d54;
-  min-height: 80px;
+  width: 100%;
+  margin: 0;
   color: #ffffff;
-  padding: 25px 0; }
-  footer .footer-col-left,
-  footer .footer-col-right {
-    text-align: center; }
-  footer .footer-col-left {
-    padding: 0 10px; }
-  footer .footer-col-right {
-    padding: 0 10px; }
+  clear: both; }
+  footer .row {
+    margin: 0 60px;
+    padding: 30px; }
+  footer .footer-col-one,
+  footer .footer-col-two,
+  footer .footer-col-three,
+  footer .footer-col-four {
+    text-align: left; }
+    footer .footer-col-one h3,
+    footer .footer-col-two h3,
+    footer .footer-col-three h3,
+    footer .footer-col-four h3 {
+      font-size: 18px; }
   footer p {
     padding: 10px 0; }
   footer ul {
@@ -10486,36 +10493,16 @@ footer {
     width: 100%;
     margin-bottom: 0; }
     footer ul li {
-      display: block;
-      padding: 0; }
+      display: list-item;
+      padding: 0;
+      font-size: 10px; }
       footer ul li a,
       footer ul li a:visited {
         display: block;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 10px 10px;
+        padding: 10px 0;
         color: #ffffff; }
-      @media (min-width: 370px) {
-      footer .footer-col-left {
-        padding: 0 60px; }
-      footer .footer-col-right {
-        padding: 0 60px; } }
-      @media (min-width: 765px) {
-      footer .footer-col-left {
-        text-align: left;
-        padding-left: 90px;
-        padding-right: 0; }
-      footer .footer-col-right {
-        text-align: right;
-        padding-right: 90px;
-        padding-left: 0; }
-        footer ul li {
-          display: inline-block; } }
-      @media (min-width: 1200px) {
-      footer .footer-col-left {
-        padding-left: 120px; }
-      footer .footer-col-right {
-        padding-right: 120px; } }
 
 /*
  ===================
@@ -10696,7 +10683,8 @@ article.post {
 
 article.post.teaser,
 article.page.teaser {
-  margin: 0; }
+  margin: 0;
+  float: left; }
 
 /*
  ===========
@@ -10933,7 +10921,8 @@ a img.aligncenter {
     background: transparent; }
 
 .logo-container {
-  background-color: grey; }
+  background-color: grey;
+  height: 90px; }
 
 @media (min-width: 370px) {
   .header-slider {
@@ -11130,7 +11119,7 @@ a img.aligncenter {
 */
 
 .teaser {
-  min-height: 400px;
+  min-height: 250px;
   height: auto;
   background-size: contain;
   background-position: center right;
@@ -11151,7 +11140,14 @@ a img.aligncenter {
       width: auto;
       height: 430px; }
   .teaser .teaser-inner {
-    padding: 35px; }
+    padding: 35px;
+    width: 100%;
+    height: 100%; }
+    .teaser .teaser-inner .teaser-arrow {
+      width: 50px;
+      height: 50px;
+      bottom: 40px;
+      left: 87px; }
   .teaser h1, .teaser h2, .teaser h3 {
     word-wrap: normal; }
   .teaser .teaser-topic {
@@ -11163,26 +11159,8 @@ a img.aligncenter {
   .teaser .teaser-content {
     color: #3b3a3a; }
   .teaser .teaser-link {
-    position: absolute;
-    text-transform: uppercase;
-    color: #3b3a3a;
-    height: 32px;
-    line-height: 32px;
-    bottom: 35px; }
-    .teaser .teaser-link .teaser-link-icon {
-      display: block;
-      float: left;
-      width: 32px;
-      height: 32px;
-      margin-right: 10px;
-      background-size: 32px 32px; }
-  .teaser .teaser-link-full {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+    bottom: 40px;
+    left: 87px; }
 
 /*
  ======================
@@ -11243,9 +11221,9 @@ a img.aligncenter {
 
 @media (min-width: 370px) {
     .teaser {
-      height: 450px; }
+      height: 250px; }
         .teaser .teaser-bg img {
-          height: 450px; }
+          height: 250px; }
       .teaser .teaser-inner {
         padding: 35px; }
       .teaser .teaser-link {
@@ -11253,9 +11231,9 @@ a img.aligncenter {
 
 @media (min-width: 765px) {
     .teaser {
-      height: 450px; }
+      height: 300px; }
         .teaser .teaser-bg img {
-          height: 450px; }
+          height: 300px; }
       .teaser .teaser-inner {
         padding: 35px; }
       .teaser .teaser-link {
@@ -11275,13 +11253,11 @@ a img.aligncenter {
 
 @media (max-width: 1920px) {
       .teaser .teaser-inner {
-        padding: 40px;
-        padding-bottom: 77px; } }
+        padding: 40px; } }
 
 @media (max-width: 375px) {
       .teaser .teaser-inner {
-        padding: 25px;
-        padding-bottom: 35px; }
+        padding: 25px; }
       .teaser .teaser-link {
         bottom: 15px; } }
 

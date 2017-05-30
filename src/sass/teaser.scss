@@ -12,11 +12,12 @@
 }
 
 .teaser {
-  min-height: 400px;
+  min-height: 250px;
   height: auto;
   background-size: contain;
   background-position: center right;
   background-repeat: no-repeat;
+
 
   @media (min-width: $screen-sm-min) {
     height: $teaser-height-sm;
@@ -74,15 +75,15 @@
   
   .teaser-inner {
     padding: $teaser-padding-xs;
+    width: 100%;
+    height: 100%;
 
     @media (max-width: $screen-xs-max) {
       padding: 40px;
-      padding-bottom: $teaser-padding-xs + $teaser-link-icon-height + 10px;
 
     }
     @media (max-width: $screen-xs){
       padding: 25px;
-      padding-bottom: 35px;
     }
     @media (min-width: $screen-sm-min) {
       padding: $teaser-padding-sm;
@@ -94,6 +95,13 @@
 
     @media (min-width: $screen-lg-min) {
       padding: $teaser-padding-lg;
+    }
+
+    .teaser-arrow {
+      width: 50px;
+      height: 50px;
+      bottom: 40px;
+      left: 87px;
     }
   }
 
@@ -119,15 +127,10 @@
   
   // Link
   .teaser-link {
-    position: absolute;
-    text-transform: uppercase;
-    color: $text-color;
-    height: $teaser-link-icon-height;
-    line-height: $teaser-link-icon-height;
-    bottom: $teaser-padding-xs;
+    bottom: 40px;
+    left: 87px;
 
     @media (min-width: $screen-sm-min) {
-      //bottom: $teaser-padding-sm;
       bottom: 20px;
     }
     @media (max-width: $screen-xs){
@@ -140,24 +143,7 @@
     @media (min-width: $screen-lg-min) {
       bottom: $teaser-padding-lg;
     }
-    
-    .teaser-link-icon {
-      display: block;
-      float: left;
-      width: 32px;
-      height: 32px;
-      margin-right: 10px;
-      background-size: 32px 32px; 
-    }
-  }
-  
-  .teaser-link-full {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+
   }
 }
 

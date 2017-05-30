@@ -1,22 +1,37 @@
 					</main>
 
-					<footer class="footer" role="contentinfo">
-						<div class="footer-col-left">
-							<p><?php echo get_theme_mod('jgs_footer_copyright','Copyright &copy; '.date('Y')); ?></p>
-						</div>
+					<footer class="footer navbar-fixed-bottom" role="contentinfo">
+                        <div class="row">
+                            <div class="footer-col-one col-md-3 col-lg-3">
+                                <h3>Connect with us</h3>
+                            </div>
 
-						<div class="footer-col-right">
-							<?php wp_nav_menu([
-								'container'       => '',
-								'container_class' => '',
-								'menu_class'      => '',
-								'theme_location'  => 'footer',
-							]); ?>
-						</div>
+                            <div class="footer-col-two col-md-3 col-lg-3">
+                                <h3>Sitemap</h3>
+                                <?php wp_nav_menu([
+                                    'container'       => '',
+                                    'container_class' => '',
+                                    'menu_class'      => '',
+                                    'theme_location'  => 'footer',
+                                ]); ?>
+                            </div>
+
+                            <div class="footer-col-three col-md-3 col-lg-3">
+                                <h3>Legal</h3>
+                                <?php wp_nav_menu([
+                                    'container'       => '',
+                                    'container_class' => '',
+                                    'menu_class'      => '',
+                                    'theme_location'  => 'footer-legal',
+                                ]); ?>
+                            </div>
+
+                            <div class="footer-col-four col-md-3 col-lg-3">
+                                <p><?php echo get_theme_mod('jgs_footer_copyright','Copyright &copy; '.date('Y')); ?></p>
+                            </div>
+                        </div>
 					</footer>
 				</section>
-					
-				<?php get_template_part('partials/navigations/main-offcanvas'); ?>
 			</div>
 		</div>
 				
