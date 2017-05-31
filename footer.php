@@ -27,6 +27,10 @@
                             </div>
 
                             <div class="footer-col-four col-md-3 col-lg-3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
                                 <p><?php echo get_theme_mod('jgs_footer_copyright','Copyright &copy; '.date('Y')); ?></p>
                             </div>
                         </div>

@@ -52,6 +52,8 @@ footer {
   footer .row {
     margin: 0 60px;
     padding: 30px; }
+    footer .row .col-lg-12 p {
+      text-align: center; }
   footer .footer-col-one,
   footer .footer-col-two,
   footer .footer-col-three,

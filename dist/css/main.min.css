@@ -10475,6 +10475,8 @@ footer {
   footer .row {
     margin: 0 60px;
     padding: 30px; }
+    footer .row .col-lg-12 p {
+      text-align: center; }
   footer .footer-col-one,
   footer .footer-col-two,
   footer .footer-col-three,
@@ -10962,6 +10964,26 @@ Navigation Sample: CSS
 This is the straight CSS example of navigation code.
 */
 /* Some Basic Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.2;
+  background-color: white; }
+
+.container {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.page-uno {
+  float: right;
+  width: 75%; }
+
+.page-dos {
+  float: right;
+  width: 20%; }
+
 /* The important stuff */
 .nav {
   background-color: #cbcbcb; }
@@ -10997,15 +11019,6 @@ This is the straight CSS example of navigation code.
   left: -99999px;
   width: 10em;
   background-color: #b1b1b1; }
-
-.nav ul li {
-  border-top: 1px solid #efefef; }
-
-.nav ul li:first-child {
-  border-top: none; }
-
-.nav ul a:hover {
-  background-color: #919191; }
 
 /* Slider */
 .slick-slider

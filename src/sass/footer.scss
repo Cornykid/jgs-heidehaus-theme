@@ -16,6 +16,11 @@ footer {
   .row {
     margin: 0 60px;
     padding: 30px;
+    .col-lg-12 {
+      p {
+        text-align: center;
+      }
+    }
   }
 
   .footer-col-one,
